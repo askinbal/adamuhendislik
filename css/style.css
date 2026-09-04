@@ -346,32 +346,6 @@ ul {
   background: #ffffff;
 }
 
-.hero-media {
-  position: absolute;
-  inset: 0;
-}
-
-.hero-media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: scale(1.06);
-  animation: kenburns 28s ease-in-out infinite alternate;
-  filter: contrast(1.12) saturate(1.2) brightness(1.02);
-}
-
-.hero-media::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.06);
-}
-
-@keyframes kenburns {
-  from { transform: scale(1.04) translateY(0); }
-  to { transform: scale(1.12) translateY(-18px); }
-}
-
 .hero-content {
   position: relative;
   z-index: 2;
@@ -390,7 +364,6 @@ ul {
   font-weight: 700;
   line-height: 0.85;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
   color: rgb(13, 40, 102);
   text-shadow: 0 8px 24px rgba(13, 40, 102, 0.25);
   margin: 0;
@@ -403,8 +376,7 @@ ul {
   line-height: 0.9;
   letter-spacing: 0.01em;
   text-transform: uppercase;
-  color: #ffffff;
-  text-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+  color: var(--text);
   max-width: 8.4em;
 }
 
@@ -425,8 +397,7 @@ ul {
   line-height: 1.05;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
-  text-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+  color: var(--text);
 }
 
 .scroll-hint {
