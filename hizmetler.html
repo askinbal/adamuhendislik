@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="titleServices">Hizmetlerimiz | Ada Mühendislik</title>
+  <meta name="description" content="Ada Mühendislik hizmetleri: boru hattı kaliper pik hizmeti ve boru hattı danışmanlık hizmetleri.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="Ada Mühendislik" class="logo-img">
+      </a>
+      <nav class="nav">
+        <a href="kurumsal.html" data-i18n="navCorporate">Kurumsal</a>
+        <a class="active" href="hizmetler.html" data-i18n="navServices">Hizmetlerimiz</a>
+        <a href="urunler.html" data-i18n="navProducts">Ürünlerimiz</a>
+        <a href="referanslar.html" data-i18n="navReferences">Referanslar</a>
+        <a href="iletisim.html" data-i18n="navContact">İletişim</a>
+      </nav>
+      <div class="header-meta">
+        <div class="lang"><button type="button" data-lang="tr" class="active">TR</button><button type="button" data-lang="en">EN</button></div>
+        <div class="socials"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="LinkedIn">in</a></div>
+        <button class="menu-toggle" id="menuToggle" data-i18n-aria="menuAria" aria-label="Menü">☰</button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-nav" id="mobileNav">
+    <button class="close-menu" id="closeMenu">×</button>
+    <a href="index.html" data-i18n="navHome">Ana Sayfa</a>
+    <a href="kurumsal.html" data-i18n="navCorporate">Kurumsal</a>
+    <a href="hizmetler.html" data-i18n="navServices">Hizmetlerimiz</a>
+    <a href="urunler.html" data-i18n="navProducts">Ürünlerimiz</a>
+    <a href="referanslar.html" data-i18n="navReferences">Referanslar</a>
+    <a href="iletisim.html" data-i18n="navContact">İletişim</a>
+  </div>
+
+  <section class="page-hero">
+    <img src="images/test-cihazi.png" alt="Test hizmetleri">
+    <div class="container">
+      <h1 data-i18n="servicesHero">Hizmetlerimiz</h1>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="product-grid service-grid-two">
+        <article class="product-card">
+          <img src="images/hizmetler/hiz1.png" alt="Boru hattı kaliper pik hizmeti">
+          <div class="body">
+            <h3 data-i18n="svcCaliper">Boru Hattı Kaliper Pik Hizmeti</h3>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="images/hizmetler/hiz2.png" alt="Boru hattı danışmanlık hizmetleri">
+          <div class="body">
+            <h3 data-i18n="svcConsult">Boru Hattı Danışmanlık Hizmetleri</h3>
+          </div>
+        </article>
+      </div>
+      <p class="lead" style="margin-top:36px;" data-i18n="svcContactLead">Hizmetlerimiz hakkında bilgi için lütfen şirketimizle temasa geçiniz.</p>
+      <a class="btn" href="iletisim.html" style="margin-top:18px;" data-i18n="btnContact">İletişim</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="logo" href="index.html"><img src="images/logo.png" alt="Ada Mühendislik" class="logo-img"></a></div>
+      <div class="footer-contact"><p>Ataşehir / İstanbul<br>info@adamuhendislik.net</p></div>
+      <div><a class="btn btn-solid" href="iletisim.html" data-i18n="btnQuote">Teklif Alın</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© Ada Mühendislik 2026</span></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

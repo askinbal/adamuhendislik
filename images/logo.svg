@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 236" role="img" aria-label="Ada Mühendislik">
+  <g fill="rgb(13,40,102)">
+    <!-- Left A -->
+    <path fill-rule="evenodd" d="M18 148 L108 12 h28 L226 148 h-52 L184 108 H60 L42 148 Z M76 86 h96 L122 28 Z"/>
+    <!-- Circle + D -->
+    <circle cx="320" cy="80" r="72" fill="none" stroke="rgb(13,40,102)" stroke-width="7"/>
+    <g transform="translate(320,80) scale(-1,1) translate(-320,-80)">
+      <path fill-rule="evenodd" d="M286 36 h28 c36 0 58 18 58 44 s-22 44-58 44 h-28 Z M304 54 v52 h8 c20 0 36-10 36-26 s-16-26-36-26 Z"/>
+    </g>
+    <!-- Right A -->
+    <path fill-rule="evenodd" d="M414 148 L504 12 h28 L622 148 h-52 L580 108 H456 L438 148 Z M472 86 h96 L518 28 Z"/>
+    <!-- MÜHENDİSLİK -->
+    <text x="320" y="214" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" letter-spacing="11">MÜHENDİSLİK</text>
+  </g>
+</svg>

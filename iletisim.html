@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="titleContact">İletişim | Ada Mühendislik</title>
+  <meta name="description" content="Ada Mühendislik iletişim: Trendist Ataşehir Residence, telefon, e-posta ve konum.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="Ada Mühendislik" class="logo-img">
+      </a>
+      <nav class="nav">
+        <a href="kurumsal.html" data-i18n="navCorporate">Kurumsal</a>
+        <a href="hizmetler.html" data-i18n="navServices">Hizmetlerimiz</a>
+        <a href="urunler.html" data-i18n="navProducts">Ürünlerimiz</a>
+        <a href="referanslar.html" data-i18n="navReferences">Referanslar</a>
+        <a class="active" href="iletisim.html" data-i18n="navContact">İletişim</a>
+      </nav>
+      <div class="header-meta">
+        <div class="lang"><button type="button" data-lang="tr" class="active">TR</button><button type="button" data-lang="en">EN</button></div>
+        <div class="socials"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="LinkedIn">in</a></div>
+        <button class="menu-toggle" id="menuToggle" data-i18n-aria="menuAria" aria-label="Menü">☰</button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-nav" id="mobileNav">
+    <button class="close-menu" id="closeMenu">×</button>
+    <a href="index.html" data-i18n="navHome">Ana Sayfa</a>
+    <a href="kurumsal.html" data-i18n="navCorporate">Kurumsal</a>
+    <a href="hizmetler.html" data-i18n="navServices">Hizmetlerimiz</a>
+    <a href="urunler.html" data-i18n="navProducts">Ürünlerimiz</a>
+    <a href="referanslar.html" data-i18n="navReferences">Referanslar</a>
+    <a href="iletisim.html" data-i18n="navContact">İletişim</a>
+  </div>
+
+  <section class="page-hero">
+    <img src="images/hero-boru-hatti.png" alt="İletişim">
+    <div class="container">
+      <h1 data-i18n="contactHero">İletişim</h1>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container contact-wrap">
+      <div>
+        <div class="contact-card">
+          <h3 data-i18n="contactCompany">Firma</h3>
+          <p>ADA MÜHENDİSLİK İNŞ. SAN. TİC. LTD. ŞTİ.</p>
+        </div>
+        <div class="contact-card">
+          <h3 data-i18n="contactAddress">Adres</h3>
+          <p>Trendist Ataşehir Residence<br>Atatürk Mah. Fazıl Paşa Sok. No: 9-11 O<br>A3 Blok, Dai. 289<br>Ataşehir / İstanbul</p>
+        </div>
+        <div class="contact-card">
+          <h3 data-i18n="contactPhone">Telefon</h3>
+          <p>
+            <a href="tel:+905068619040">+90 506 861 90 40</a><br>
+            <a href="tel:+905425611737">+90 542 561 17 37</a>
+          </p>
+        </div>
+        <div class="contact-card">
+          <h3 data-i18n="contactEmail">E-posta</h3>
+          <p>
+            <a href="mailto:info@adamuhendislik.net">info@adamuhendislik.net</a><br>
+            <a href="mailto:satis@adamuhendislik.net">satis@adamuhendislik.net</a>
+          </p>
+        </div>
+        <div class="map-frame">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2532.560713231282!2d29.138651981764575!3d40.98719086799503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cacf5569d75cf7%3A0xfbf189ea882d0b26!2zQXRhxZ9laGlyIEF0YXTDvHJrLCBGYXrEsWwgUGHFn2EgU2suIE5vOjksIDM0NzU4IEF0YcWfZWhpci_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1469524305027" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ada Mühendislik Konum"></iframe>
+        </div>
+      </div>
+      <form class="form" id="contactForm" action="mailto:info@adamuhendislik.net,satis@adamuhendislik.net" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Ad Soyad" data-i18n-placeholder="phName" required>
+        <input type="email" name="email" placeholder="E-posta" data-i18n-placeholder="phEmail" required>
+        <input type="tel" name="phone" placeholder="Telefon" data-i18n-placeholder="phPhone">
+        <select name="subject">
+          <option value="" data-i18n="phSubject">Konu seçiniz</option>
+          <option data-i18n="optSupply">Malzeme tedariki</option>
+          <option data-i18n="optTest">Test cihazı satışı / kiralama</option>
+          <option data-i18n="optCal">Kalibrasyon</option>
+          <option data-i18n="optField">Saha teknik destek</option>
+        </select>
+        <textarea name="message" placeholder="Projeniz ve ihtiyacınız" data-i18n-placeholder="phMessage" required></textarea>
+        <button class="btn btn-solid" type="submit" data-i18n="btnSubmit">Gönder</button>
+        <p id="formNote" class="lead"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="logo" href="index.html"><img src="images/logo.png" alt="Ada Mühendislik" class="logo-img"></a></div>
+      <div class="footer-contact"><p>Trendist Ataşehir Residence<br>Ataşehir / İstanbul<br><a href="mailto:info@adamuhendislik.net">info@adamuhendislik.net</a></p></div>
+    </div>
+    <div class="container footer-bottom"><span>© Ada Mühendislik 2026</span></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

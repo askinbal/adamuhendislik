@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="titleCatalog">Online Katalog | Ada Mühendislik</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="Ada Mühendislik" class="logo-img">
+      </a>
+      <nav class="nav">
+        <a href="kurumsal.html" data-i18n="navCorporate">Kurumsal</a>
+        <a href="hizmetler.html" data-i18n="navServices">Hizmetlerimiz</a>
+        <a href="urunler.html" data-i18n="navProducts">Ürünlerimiz</a>
+        <a href="referanslar.html" data-i18n="navReferences">Referanslar</a>
+        <a href="iletisim.html" data-i18n="navContact">İletişim</a>
+      </nav>
+      <div class="header-meta">
+        <div class="lang"><button type="button" data-lang="tr" class="active">TR</button><button type="button" data-lang="en">EN</button></div>
+        <div class="socials"><a href="#">f</a><a href="#">in</a></div>
+        <button class="menu-toggle" id="menuToggle" data-i18n-aria="menuAria" aria-label="Menü">☰</button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-nav" id="mobileNav">
+    <button class="close-menu" id="closeMenu">×</button>
+    <a href="index.html" data-i18n="navHome">Ana Sayfa</a>
+    <a href="urunler.html" data-i18n="navProducts">Ürünlerimiz</a>
+    <a href="katalog.html" data-i18n="navCatalog">Katalog</a>
+    <a href="iletisim.html" data-i18n="navContact">İletişim</a>
+  </div>
+
+  <section class="page-hero">
+    <img src="images/kalibrasyon.png" alt="Katalog">
+    <div class="container">
+      <h1 data-i18n="catalogHero">Malzeme ve Test Cihazları</h1>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <p class="lead" data-i18n="catalogLead">Aşağıdaki liste özet kataloğumuzdur. Stok ve teslim süresi için teklif formunu kullanınız. Fiyatlar proje şartnamesine göre netleşir.</p>
+      <table class="catalog-table">
+        <thead>
+          <tr>
+            <th data-i18n="thCode">Kod</th>
+            <th data-i18n="thProduct">Ürün</th>
+            <th data-i18n="thStd">Standart</th>
+            <th data-i18n="thDesc">Açıklama</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>ADA-P-5L</td><td data-i18n="catPipe">Hat borusu</td><td>API 5L / EN 10208</td><td data-i18n="catPipeDesc">Karbon çelik, dikişli-dikişsiz, kaplamalı seçenek</td></tr>
+          <tr><td>ADA-V-BALL</td><td data-i18n="catBall">Küresel vana</td><td>API 6D / ASME B16.34</td><td>Class 150–2500, full bore, fire-safe</td></tr>
+          <tr><td>ADA-V-GATE</td><td data-i18n="catGate">Sürgülü vana</td><td>API 600</td><td>Rising stem, flexible wedge</td></tr>
+          <tr><td>ADA-F-WN</td><td data-i18n="catFlange">WN flanş</td><td>ASME B16.5 / B16.47</td><td>RF / RTJ, A105 / 316</td></tr>
+          <tr><td>ADA-F-FIT</td><td data-i18n="catFit">Fitting</td><td>ASME B16.9</td><td data-i18n="catFitDesc">Dirsek, tee, cap, redüksiyon</td></tr>
+          <tr><td>ADA-T-HYD</td><td data-i18n="catHyd">Hidrostatik pompa</td><td data-i18n="catHydStd">ISO 9001 izlenebilir</td><td data-i18n="catHydDesc">70–1000 bar, elektrikli / dizel</td></tr>
+          <tr><td>ADA-T-REC</td><td data-i18n="catRec">Basınç recorder</td><td>IEC</td><td data-i18n="catRecDesc">Dijital kayıt, chart recorder</td></tr>
+          <tr><td>ADA-T-UT</td><td data-i18n="catUt">Ultrasonik kalınlık</td><td>EN ISO 16809</td><td data-i18n="catUtDesc">Saha tipi UT cihazı ve kalibrasyon bloğu</td></tr>
+          <tr><td>ADA-T-MT</td><td data-i18n="catMt">Manyetik yonga seti</td><td>EN ISO 9934</td><td data-i18n="catMtDesc">Yoke, toz, UV lamba</td></tr>
+          <tr><td>ADA-C-3LPE</td><td data-i18n="catCoat">Kaplama tamir</td><td>DIN 30670</td><td data-i18n="catCoatDesc">Heat shrink, soğuk sargı, primer</td></tr>
+          <tr><td>ADA-P-PIG</td><td data-i18n="catPig">Pigging</td><td data-i18n="catPigStd">Saha spesifikasyonu</td><td data-i18n="catPigDesc">Foam / cup pig ve yedek parça</td></tr>
+          <tr><td>ADA-K-CAL</td><td data-i18n="catCal">Kalibrasyon hizmeti</td><td data-i18n="catCalStd">İzlenebilir sertifika</td><td data-i18n="catCalDesc">Manometre ve pompa kalibrasyonu</td></tr>
+        </tbody>
+      </table>
+      <div style="margin-top:36px;">
+        <a class="btn btn-solid" href="iletisim.html" data-i18n="btnRequest">Teklif isteyin</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="logo" href="index.html"><img src="images/logo.png" alt="Ada Mühendislik" class="logo-img"></a></div>
+      <div class="footer-contact"><p>info@adamuhendislik.net</p></div>
+      <div><a class="btn" href="urunler.html" data-i18n="btnProducts">Ürünler</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© Ada Mühendislik 2026</span><span data-i18n="rights">Tüm hakları saklıdır</span></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telefon sunumu | Ada Mühendislik</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0d2866;
+      --muted: #5c5c5c;
+      --line: rgba(0, 0, 0, 0.1);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      font-family: Manrope, sans-serif;
+      background: #e8ecf2;
+      color: #1a1a1a;
+      display: grid;
+      grid-template-columns: 260px 1fr;
+    }
+    aside {
+      padding: 32px 24px;
+      background: #ffffff;
+      border-right: 1px solid var(--line);
+    }
+    h1 {
+      font-family: Oswald, sans-serif;
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--navy);
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+    .note {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.55;
+      margin-bottom: 28px;
+    }
+    nav { display: flex; flex-direction: column; gap: 8px; }
+    nav button {
+      text-align: left;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      background: #ffffff;
+      color: var(--navy);
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    nav button.active {
+      background: var(--navy);
+      color: #ffffff;
+      border-color: var(--navy);
+    }
+    .stage {
+      display: grid;
+      place-items: center;
+      padding: 32px 16px;
+    }
+    .phone {
+      width: 390px;
+      height: 844px;
+      border: 12px solid #1a1a1a;
+      border-radius: 40px;
+      overflow: hidden;
+      background: #ffffff;
+      position: relative;
+    }
+    .phone::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 22px;
+      background: #1a1a1a;
+      border-radius: 0 0 14px 14px;
+      z-index: 2;
+    }
+    iframe {
+      width: 390px;
+      height: 844px;
+      border: 0;
+      background: #ffffff;
+    }
+    @media (max-width: 760px) {
+      body { grid-template-columns: 1fr; }
+      aside { border-right: 0; border-bottom: 1px solid var(--line); }
+      .phone, iframe { width: min(390px, 100%); height: 70vh; }
+    }
+  </style>
+</head>
+<body>
+  <aside>
+    <h1>Telefon<br>sunumu</h1>
+    <p class="note">iPhone boyutu (390×844). Sayfa seçin, çerçeve içinde gezinin. Menü için sağ üstteki ☰, dil için TR / EN.</p>
+    <nav id="pages">
+      <button type="button" data-src="index.html" class="active">Ana sayfa</button>
+      <button type="button" data-src="kurumsal.html">Kurumsal</button>
+      <button type="button" data-src="hizmetler.html">Hizmetler</button>
+      <button type="button" data-src="urunler.html">Ürünler</button>
+      <button type="button" data-src="referanslar.html">Referanslar</button>
+      <button type="button" data-src="iletisim.html">İletişim</button>
+      <button type="button" data-src="link-seal.html">Link Seal</button>
+      <button type="button" data-src="uygulama-videolari.html">Videolar</button>
+    </nav>
+  </aside>
+  <div class="stage">
+    <div class="phone">
+      <iframe id="screen" src="index.html" title="Ada Mühendislik telefon görünümü"></iframe>
+    </div>
+  </div>
+  <script>
+    var frame = document.getElementById("screen");
+    document.getElementById("pages").addEventListener("click", function (e) {
+      var btn = e.target.closest("button[data-src]");
+      if (!btn) return;
+      document.querySelectorAll("#pages button").forEach(function (b) {
+        b.classList.toggle("active", b === btn);
+      });
+      frame.src = btn.getAttribute("data-src");
+    });
+  </script>
+</body>
+</html>
