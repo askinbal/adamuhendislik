@@ -383,7 +383,7 @@ ul {
   align-items: end;
 }
 
-.hero-askin {
+.hero-bal {
   grid-column: 1 / -1;
   font-family: var(--font-display);
   font-size: clamp(72px, 16vw, 220px);
@@ -391,8 +391,8 @@ ul {
   line-height: 0.85;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #ffffff;
-  text-shadow: 0 12px 36px rgba(0, 0, 0, 0.4);
+  color: rgb(13, 40, 102);
+  text-shadow: 0 8px 24px rgba(13, 40, 102, 0.25);
   margin: 0;
 }
 
@@ -1551,7 +1551,7 @@ ul {
     width: min(1500px, calc(100% - 36px));
   }
 
-  .hero-askin {
+  .hero-bal {
     font-size: clamp(56px, 22vw, 140px);
   }
 
